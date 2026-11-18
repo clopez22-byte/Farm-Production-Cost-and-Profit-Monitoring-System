@@ -620,18 +620,29 @@ with st.sidebar:
 # PAGE HEADER
 # =====================================================
 
-st.markdown(f"""
-<div class="farm-header">
+st.markdown("""
+<style>
+.farm-header {
+    background: linear-gradient(110deg, #1B5E20, #43A047);
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+}
 
-    <h1>{page}</h1>
+.farm-header h1 {
+    color: white !important;
+    font-size: 32px;
+    font-weight: bold;
+}
 
-    <p>
-        Welcome, {user['full_name']}!
-        Manage and monitor your farm production activities.
-    </p>
-
-</div>
+.farm-header p {
+    color: #F1F8E9 !important;
+    font-size: 16px;
+}
+</style>
 """, unsafe_allow_html=True)
+
 
 
 # =====================================================
@@ -1551,21 +1562,35 @@ st.divider()
 st.markdown("""
 <div style="
     background: linear-gradient(90deg, #1B5E20, #388E3C);
-    padding: 18px;
-    border-radius: 10px;
+    padding: 25px 15px;
+    border-radius: 12px;
     text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
 ">
 
-    <h4 style="color:white !important;">
+    <h4 style="
+        color: white !important;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    ">
         🌾 Farm Production Cost & Profit Monitoring System
     </h4>
 
-    <p style="color:#E8F5E9;">
+    <p style="
+        color: #E8F5E9 !important;
+        font-size: 15px;
+        margin-bottom: 8px;
+    ">
         Growing better farms through better information.
     </p>
 
-    <small style="color:#F1F8E9;">
-        Academic Project Prototype
+    <small style="
+        color: #F1F8E9 !important;
+        font-size: 13px;
+    ">
+        Academic Project Prototype | 2026
     </small>
 
 </div>
