@@ -1566,7 +1566,6 @@ st.markdown("""
     border-radius: 12px;
     text-align: center;
     margin-top: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
 ">
 
     <h4 style="
