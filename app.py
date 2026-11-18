@@ -462,21 +462,15 @@ if "user" not in st.session_state:
 def login_screen():
 
     st.markdown("""
-    <div class="farm-header">
-
-        <h1>🌾 Farm Production Cost & Profit</h1>
-
-        <h2 style="color:#F1F8E9 !important;">
-            Monitoring System
-        </h2>
-
-        <p>
-            Manage farm information, production expenses,
-            harvests, sales, and financial reports.
-        </p>
-
-    </div>
-    """, unsafe_allow_html=True)
+<div class="farm-header">
+    <h1>🌾 Farm Production Cost & Profit</h1>
+    <h2>Monitoring System</h2>
+    <p>
+        Manage farm information, production expenses,
+        harvests, sales, and financial reports.
+    </p>
+</div>
+""", unsafe_allow_html=True)
 
     left, right = st.columns([1.2, 1])
 
