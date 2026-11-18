@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+farm_monitor.db
+.streamlit/secrets.toml
