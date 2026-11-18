@@ -1552,26 +1552,3 @@ elif page == "User Management" and user["role"] == "Administrator":
         "Account activation/deactivation and password reset are not included in this prototype."
     )
 
-
-# =====================================================
-# FOOTER
-# =====================================================
-
-st.markdown("""
-<div class="farm-header">
-    <h1>🌾 Farm Production Cost & Profit Monitoring System</h1>
-    
-    <p>
-        Growing better farms through better information.
-    </p>
-</div>
-""", unsafe_allow_html=True)
-
-    left, right = st.columns([1.2, 1])
-
-    with left:
-
-        st.markdown(
-            '<div class="login-card">',
-            unsafe_allow_html=True
-        )
