@@ -1557,40 +1557,21 @@ elif page == "User Management" and user["role"] == "Administrator":
 # FOOTER
 # =====================================================
 
-st.divider()
-
 st.markdown("""
-<div style="
-    background: linear-gradient(90deg, #1B5E20, #388E3C);
-    padding: 25px 15px;
-    border-radius: 12px;
-    text-align: center;
-    margin-top: 20px;
-">
-
-    <h4 style="
-        color: white !important;
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    ">
-        🌾 Farm Production Cost & Profit Monitoring System
-    </h4>
-
-    <p style="
-        color: #E8F5E9 !important;
-        font-size: 15px;
-        margin-bottom: 8px;
-    ">
+<div class="farm-header">
+    <h1>🌾 Farm Production Cost & Profit Monitoring System</h1>
+    
+    <p>
         Growing better farms through better information.
     </p>
-
-    <small style="
-        color: #F1F8E9 !important;
-        font-size: 13px;
-    ">
-        Academic Project Prototype | 2026
-    </small>
-
 </div>
 """, unsafe_allow_html=True)
+
+    left, right = st.columns([1.2, 1])
+
+    with left:
+
+        st.markdown(
+            '<div class="login-card">',
+            unsafe_allow_html=True
+        )
